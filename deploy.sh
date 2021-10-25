@@ -10,6 +10,6 @@ git status &&
 git add . &&
 git status &&
 git commit -m 'update blog' &&
-git push origin mian &&
+git push origin main &&
 echo 'task finished'
 ##
