@@ -3,8 +3,10 @@ rm -rf public/ &&
 yarn build &&
 pwd &&
 zip -q -r -o public.zip public &&
-scp -i '/Users/jiabinbin/.ssh/root' public.zip root@163.53.219.60:/root/website/blog/ &&
-ssh -i '/Users/jiabinbin/.ssh/root' root@163.53.219.60 'cd /root/website/blog/ ; ./deploy.sh' &&
+#scp -i '/Users/jiabinbin/.ssh/root' public.zip root@163.53.219.60:/root/website/blog/ &&
+scp -i '/Users/jiabinbin/.ssh/root' public.zip root@115.126.75.120:/root/website/blog/ &&
+#ssh -i '/Users/jiabinbin/.ssh/root' root@163.53.219.60 'cd /root/website/blog/ ; ./deploy.sh' &&
+ssh -i '/Users/jiabinbin/.ssh/root' root@115.126.75.120 'cd /root/website/blog/ ; ./deploy.sh' &&
 rm -rf public.zip &&
 git status &&
 git add . &&
