@@ -1,6 +1,6 @@
 #!/bin/sh
-rm -rf public/ &&
-yarn build &&
+#rm -rf public/ &&
+#yarn build &&
 pwd &&
 zip -q -r -o public.zip public &&
 #scp -i '/Users/jiabinbin/.ssh/root' public.zip root@163.53.219.60:/root/website/blog/ &&
